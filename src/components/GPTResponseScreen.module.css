@@ -1,0 +1,112 @@
+.aiOptimizedPrompt {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.input {
+  border: 1px solid var(--studio-lightmode-midseparator-dee3eb);
+  background-color: var(--color-whitesmoke-100);
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-xl);
+  align-self: stretch;
+  border-radius: var(--br-11xs);
+  box-sizing: border-box;
+  height: 21.25rem;
+  overflow: scroll;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 1.88rem;
+  outline: 0;
+  resize: none;
+}
+.generate {
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.46px;
+  font-family: var(--text-small);
+  color: var(--dominant);
+  text-align: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-4xs) var(--padding-smi);
+  background-color: transparent;
+  border-radius: var(--br-9xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/public/button1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: 0.3s;
+}
+.outputSection,
+.outputSection1 {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--dominant);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.outputSection1 {
+  padding: var(--padding-xl) var(--padding-xl) var(--padding-53xl);
+}
+.outputSectionParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-4xl);
+  color: var(--color-gray-1200);
+  font-family: var(--text-small);
+}
+@media screen and (max-width: 960px) {
+  .input {
+    min-height: 18.75rem;
+  }
+  .button {
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    transition: 0.3s;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 631px) {
+  .button {
+    width: 100%;
+    transition: 0.3s;
+    margin: auto;
+  }
+  .outputSection,
+  .outputSection1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .outputSectionParent {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 630px) {
+  .input {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,116 @@
+.headerElementsRowChild {
+  position: relative;
+  border-radius: 100px;
+  width: 3.13rem;
+  height: 3.13rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.aiPromptPilot1 {
+  position: relative;
+}
+.headerElementsRow {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-xs) 0;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.headerSection {
+  align-self: stretch;
+  background-color: var(--color-gray-1200);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  padding: 0 var(--padding-5xl);
+  align-items: flex-start;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: var(--dominant);
+  font-family: var(--font-banshee-pilot), sans-serif !important;
+}
+.aiPromptPilot,
+.bodySection,
+.headerSection,
+.promptPilotPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bodySection {
+  align-self: stretch;
+  background-color: #5e5e5e;
+  padding: 2.75rem var(--padding-6xl);
+  align-items: center;
+  gap: var(--gap-21xl);
+}
+.aiPromptPilot,
+.promptPilotPage {
+  align-items: flex-start;
+}
+.aiPromptPilot {
+  align-self: stretch;
+  background-color: #25222d;
+  height: 100vh;
+}
+.promptPilotPage {
+  position: sticky;
+  background-color: var(--dominant);
+  width: 100vw;
+  top: 0;
+  z-index: 1000;
+}
+@media screen and (max-width: 1200px) {
+  .bodySection,
+  .headerSection {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .bodySection {
+    align-self: stretch;
+    width: auto;
+    gap: var(--gap-xl);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+  }
+  .promptPilotPage {
+    width: auto;
+    align-self: unset;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+    z-index: 1000;
+  }
+}
+@media screen and (max-width: 960px) {
+  .aiPromptPilot1 {
+    font-size: var(--font-size-lg);
+  }
+  .headerSection {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .bodySection {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .headerSection,
+  .promptPilotPage {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .promptPilotPage {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+  }
+}
+
+#customTitle {
+  font-family: var(--font-banshee-pilot), sans-serif !important;
+}
